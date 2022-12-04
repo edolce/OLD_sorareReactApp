@@ -1,0 +1,65 @@
+@font-face {
+  font-family: AARDV;
+  src: url(AARDV.TTF);
+}
+
+.personal-space-content{
+  font-family: AARDV, serif;
+  font-size: 1.4em;
+  h1{
+    text-align: center;
+  }
+}
+.my-bundles-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  .bundle-container{
+    padding: 1em;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    width: 30em;
+    .top-side{
+      display: flex;
+      flex-direction: row;
+      img{
+        width: 20%;
+      }
+      .mini-players-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        .mini-player-container{
+          justify-content: space-between;
+          text-align: center;
+          display: flex;
+          flex-direction: row;
+          div{
+          }
+          .player-name{
+            flex: 3 1;
+          }
+          .player-rarity{
+            flex: 1 1;
+          }
+          .is-contested{
+            flex: 1 1;
+          }
+          .is-sold{
+            flex: 1 1;
+          }
+        }
+      }
+    }
+    .mid-side{
+      display: flex;
+      flex-direction: column;
+      div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+  }
+}

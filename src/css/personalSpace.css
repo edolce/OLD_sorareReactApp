@@ -1,0 +1,65 @@
+@font-face {
+  font-family: AARDV;
+  src: url(AARDV.TTF);
+}
+.personal-space-content {
+  font-family: AARDV, serif;
+  font-size: 1.4em;
+}
+.personal-space-content h1 {
+  text-align: center;
+}
+
+.my-bundles-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.my-bundles-container .bundle-container {
+  padding: 1em;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  width: 30em;
+}
+.my-bundles-container .bundle-container .top-side {
+  display: flex;
+  flex-direction: row;
+}
+.my-bundles-container .bundle-container .top-side img {
+  width: 20%;
+}
+.my-bundles-container .bundle-container .top-side .mini-players-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.my-bundles-container .bundle-container .top-side .mini-players-container .mini-player-container {
+  justify-content: space-between;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+}
+.my-bundles-container .bundle-container .top-side .mini-players-container .mini-player-container .player-name {
+  flex: 3 1;
+}
+.my-bundles-container .bundle-container .top-side .mini-players-container .mini-player-container .player-rarity {
+  flex: 1 1;
+}
+.my-bundles-container .bundle-container .top-side .mini-players-container .mini-player-container .is-contested {
+  flex: 1 1;
+}
+.my-bundles-container .bundle-container .top-side .mini-players-container .mini-player-container .is-sold {
+  flex: 1 1;
+}
+.my-bundles-container .bundle-container .mid-side {
+  display: flex;
+  flex-direction: column;
+}
+.my-bundles-container .bundle-container .mid-side div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/*# sourceMappingURL=personalSpace.css.map */

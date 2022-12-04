@@ -1,38 +1,142 @@
-.App {
-  text-align: center;
+html,body,#root,.App{
+  margin: 0;
+  overflow-y: visible;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --mainColor: #0c0d1d;
+  --mainColorRgba: 12,13,29;
+  --secondColor: #580815;
+  --secondColorRgba: 88, 8,21;
+  --thirdColor: #ffffff;
+  --thirdColorRgba: 255, 255, 255;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-div{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  background: #4d4d99;
+}
+
+header{
+  flex: 1;
+  width: 100%;
+  background: var(--mainColor);
+}
+
+footer{
+  flex: 1;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background: var(--mainColor);
+}
+
+.content{
+  flex: 10;
+  height: 100%;
+}
+
+.bundles-container{
+  background: #7ec91e;
+  padding: 2em;
+  height: 70%;
+  margin-left: 3em;
+  margin-right: 3em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  overflow-y: scroll;
+}
+
+
+.bundle-container{
+  background: #7e291c;
+  width: 14em;
+  height: 22em;
+  margin-bottom: 1em;
+  border-radius: 1em;
+  overflow: hidden;
+}
+
+.bundle{
+  height: 100%;
+}
+
+.bundle-image-container{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  height: 40%;
+  background-color: #b0b1b0;
+}
+.emblem-container{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.emblem{
+  max-height: 95%;
+  width: auto;
+}
+
+
+.info-container{
+  height: 60%;
+  background-color: #194719;
+  display: flex;
+  flex-direction: column;
+  color: #b0b1b0;
+}
+
+
+.info{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0.01em;
+}
+
+.time-left{
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.info-title{
+  color: #b0b1b0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pop-up{
+  visibility: visible;
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.pop-up-content{
+  width: 80%;
+  height: 70%;
+  background-color: #7e291c;
+}
+
+.info-player{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #b0b1b0;
+  font-size: 1.2em;
+  background-color: firebrick;
+}
+
+
+
+
+
+
